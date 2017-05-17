@@ -5,7 +5,7 @@ var reasons = ["You smell like green eggs and ham", "You're too school for cool"
 var randomNumber, randomReason;
 var i = 0;
 
-document.getElementsByTagName("body")[0].addEventListener("click", newReason);
+document.getElementById("again").addEventListener("click", newReason);
 
 function newReason(){
     while(i<reasons.length) {

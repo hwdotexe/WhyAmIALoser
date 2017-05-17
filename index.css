@@ -6,7 +6,6 @@ h1, #content, #reason {
 
 body {
     margin: 0;
-    position: fixed;
     height: 100%;
     width: 100%;
 }
@@ -14,6 +13,22 @@ body {
 hr {
     border: 1px solid #888;
     width: 40%;
+}
+
+#again {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    background: linear-gradient(#ddd, #999);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Coming Soon', sans-serif;
+    color: white;
+    margin: 30px 0;
+}
+
+#again:hover, #again:focus {
+    background: linear-gradient(#ccc, #888);
 }
 
 @media screen and (max-width: 768px){
@@ -28,9 +43,13 @@ hr {
     }
 
     #reason {
-        font-size: 46px;
+        font-size: 40px;
         animation: fadeIn 1s;
         margin: 0 15px;
+    }
+
+    #again {
+        width: 100%;
     }
 }
 
@@ -50,22 +69,10 @@ hr {
         animation: fadeIn 1s;
         margin: 0 10px;
     }
-}
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ddd;
-    height: 50px;
-    color: #888;
-}
-
-#footer p{
-    text-align: center;
-    font-weight: bold;
-    font-family: sans-serif;
+    #again {
+        width: 30%;
+    }
 }
 
 @keyframes fadeIn{
