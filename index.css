@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+
+h1 {
+    font-family: 'Coming Soon', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #888;
+    width: 40%;
+}
+
+#reason {
+    font-size: 36px;
+    animation: fadeIn 1s;
+    margin: 0 10px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
