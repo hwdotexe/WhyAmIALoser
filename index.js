@@ -1,7 +1,7 @@
 // Site version 1.1
 // Created by xFyreWolfx - http://xfyrewolfx.tech/
 
-var reasons = ["You smell like green eggs and ham", "You're too school for cool", "Your grandma told you so", "Dank memes", "You wish your boyfriend was hot like I am", "You can't catch me outside", "Mayonnaise is not an instrument", "You're friends with the Nigerian Prince", "Deodorant: try it sometime", "I don't like your T-Shirt", "You're on this website", "Your height", "You've had one too many hot dogs. Or seven.", "You were grown in a lab... and you just found out", "You forgot the Alamo, didn't you?", "You're not a real boy", "You still can't find waldo", "You eat worms", "You're a comic book nerd", "Winning is illogical", "This site has deemed you one.", "You gotta get a job, hippie!", "You got your mobility back", "You're a carrot farmer", "You sunbathe on your roof. Naked. In the city.", "Science", "You've had your blinker on for the past 5 blocks", "You're waaay too old", "Victory is not yours", "We are not the champions", "Your losing streak is a world record"];
+var reasons = ["You're too school for cool", "You wish your boyfriend was hot like I am", "You can't cash me outside", "Mayonnaise is not an instrument", "You're friends with the Nigerian Prince", "You're on this website", "You forgot the Alamo, didn't you?", "You still can't find waldo", "Winning is illogical", "This site has deemed you one.", "You gotta get a job, hippie!", "You've had your blinker on for the past 5 blocks", "Victory is not yours", "We are not the champions", "Your losing streak is a world record", "You just lost The Game"];
 var randomNumber, randomReason;
 var i = 0;
 
