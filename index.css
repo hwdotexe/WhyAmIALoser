@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
 h1, #content, #reason {
-    font-family: 'Coming Soon', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 body {
@@ -19,16 +19,16 @@ hr {
     border: none;
     border-radius: 10px;
     height: 50px;
-    background: linear-gradient(#ddd, #999);
-    font-size: 18px;
+    background: linear-gradient(#ddd, #ccc);
+    font-size: 30px;
     font-weight: bold;
-    font-family: 'Coming Soon', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
     margin: 30px 0;
 }
 
 #again:hover, #again:focus {
-    background: linear-gradient(#ccc, #888);
+    background: linear-gradient(#ccc, #bbb);
 }
 
 @media screen and (max-width: 768px){
