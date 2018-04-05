@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Nanum+Pen+Script|Metal+Mania');
 
-h1, #content, #reason {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+hr {
+    border: 1px solid #999;
 }
 
 body {
@@ -10,30 +10,65 @@ body {
     width: 100%;
 }
 
-hr {
-    border: 1px solid #888;
+#header h1 {
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#content h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#content h2 {
+    font-family: 'Comic Sans MS', 'Yanone Kaffeesatz', sans-serif;
+}
+
+#header hr {
     width: 40%;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer hr {
+    width: 75%;
+}
+
+#footer p {
+    font-family: Arial, serif;
+    font-size: 12px;
+    color: #555;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
 }
 
 #again {
     border: none;
-    border-radius: 10px;
     height: 50px;
-    background: linear-gradient(#ddd, #ccc);
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: white;
+    font-family: 'Metal Mania', sans-serif;
+    background-color: white;
+    text-shadow: -3px 3px #999;
     margin: 30px 0;
 }
 
-#again:hover, #again:focus {
-    background: linear-gradient(#ccc, #bbb);
+#again:hover {
+    font-size: 55px;
 }
 
 @media screen and (max-width: 768px){
-    h1 {
+    #header h1 {
         font-size: 40px;
+        text-align: center;
+    }
+
+    #content h1 {
+        font-size: 30px;
         text-align: center;
     }
 
@@ -42,19 +77,30 @@ hr {
         text-align: center;
     }
 
-    #reason {
+    #again:hover {
         font-size: 40px;
+    }
+
+    #reason {
+        font-size: 30px;
         animation: fadeIn 1s;
         margin: 0 15px;
     }
 
-    #again {
+    #footer {
+        position: absolute;
+        bottom: 0;
         width: 100%;
     }
 }
 
 @media screen and (min-width: 769px){
-    h1 {
+    #header h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #content h1 {
         font-size: 30px;
         text-align: center;
     }
@@ -70,8 +116,10 @@ hr {
         margin: 0 10px;
     }
 
-    #again {
-        width: 30%;
+    #footer {
+        position: fixed;
+        bottom: 1%;
+        width: 100%;
     }
 }
 
