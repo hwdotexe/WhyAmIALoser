@@ -49,7 +49,6 @@ body {
 #again {
     border: none;
     height: 50px;
-    font-size: 50px;
     font-weight: bold;
     font-family: 'Metal Mania', sans-serif;
     background-color: white;
@@ -57,11 +56,18 @@ body {
     margin: 30px 0;
 }
 
-#again:hover {
-    font-size: 55px;
-}
+
+/* Mobile */
 
 @media screen and (max-width: 768px){
+    #again {
+        font-size: 2em;
+    }
+
+    #again:hover {
+        font-size: 2.2em;
+    }
+
     #header h1 {
         font-size: 40px;
         text-align: center;
@@ -77,14 +83,11 @@ body {
         text-align: center;
     }
 
-    #again:hover {
-        font-size: 40px;
-    }
-
     #reason {
         font-size: 30px;
         animation: fadeIn 1s;
         margin: 0 15px;
+        max-height: 340px;
     }
 
     #footer {
@@ -94,7 +97,18 @@ body {
     }
 }
 
+
+/* Desktop */
+
 @media screen and (min-width: 769px){
+    #again {
+        font-size: 2.5em;
+    }
+
+    #again:hover {
+        font-size: 2.7em;
+    }
+
     #header h1 {
         font-size: 50px;
         text-align: center;
@@ -117,7 +131,7 @@ body {
     }
 
     #footer {
-        position: fixed;
+        position: absolute;
         bottom: 1%;
         width: 100%;
     }
