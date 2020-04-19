@@ -3,6 +3,7 @@
     #header h1 {
         font-size: 50px;
         text-align: center;
+        letter-spacing: 10px;
     }
 }
 
@@ -11,13 +12,11 @@
     #header h1 {
         font-size: 40px;
         text-align: center;
+        line-height: 60px;
     }
 }
 
 #header h1 {
-    font-family: 'Nanum Pen Script', cursive;
-}
-
-#header hr {
-    width: 40%;
+    font-family: 'Bungee', cursive;
+    margin: 10px;
 }

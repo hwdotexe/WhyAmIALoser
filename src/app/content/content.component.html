@@ -1,5 +1,13 @@
-<div id="content">
-    <h1>You are a loser because...</h1>
-    <h2 id="reason">{{displayReason}}</h2>
-    <button id="again" value="Again" (click)="this.refreshReason()">AGAIN</button>
+<div id="panel">
+    <div id="content">
+        <div id="contentLeft">
+            <h2>You are a loser because...</h2>
+        </div>
+        <div id="contentRight">
+            <h2>{{displayReason}}</h2>
+            <p *ngIf="false">Suggested by User123</p>
+        </div>
+        <br/>
+        <button (click)="this.refreshReason()">AGAIN</button>
+    </div>
 </div>

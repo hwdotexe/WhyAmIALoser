@@ -1,84 +1,109 @@
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Nanum+Pen+Script|Metal+Mania');
-
 /* Desktop */
 @media screen and (min-width: 900px){
-    #again {
-        font-size: 2.5em;
+    #panel {
+        max-width: 60%;
+        margin: 40px auto;
     }
 
-    #again:hover {
-        font-size: 2.7em;
+    #panel #content {
+        width: 100%;
+    }
+
+    #contentLeft {
+        width: 25%;
+    }
+
+    #contentLeft h2 {
+        text-align: right;
+    }
+
+    #contentLeft {
+        border-right: 2px solid #222;
+    }
+
+    #contentRight {
+        width: 65%;
+    }
+
+    #contentLeft, #contentRight {
+        vertical-align: middle;
+    }
+
+    button:hover {
+        background-color: #820509;
         cursor: pointer;
-    }
-
-    #content h1 {
-        font-size: 30px;
-        text-align: center;
-    }
-
-    #content {
-        margin: 10px;
-        text-align: center;
-    }
-
-    #reason {
-        font-size: 36px;
-        animation: fadeIn 1s;
-        margin: 0 10px;
     }
 }
 
 /* Mobile */
 @media screen and (max-width: 900px){
-    #again {
-        font-size: 2em;
+    #panel {
+        max-width: 90%;
+        margin: 0 auto;
     }
 
-    #again:hover {
-        font-size: 2.2em;
-    }
-
-    #content h1 {
-        font-size: 30px;
+    #contentLeft h2 {
         text-align: center;
+        margin: 0;
     }
 
-    #content {
-        margin: 10px 15px;
-        text-align: center;
-    }
-
-    #reason {
-        font-size: 30px;
-        animation: fadeIn 1s;
-        margin: 0 15px;
-        max-height: 340px;
+    button {
+        margin-top: 30px;
     }
 }
 
-hr {
-    border: 1px solid #999;
+#panel #content {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 15px;
+    padding: 10px;
 }
 
-#content h1 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+#contentLeft, #contentRight {
+    display: inline-block;
+    text-align: left;
+    margin: 0 15px;
 }
 
-#content h2 {
-    font-family: 'Comic Sans MS', 'Yanone Kaffeesatz', sans-serif;
+#contentLeft {
+    padding: 10px;
 }
 
-#again {
+#contentLeft h2 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2em;
+    color: #bc070d;
+}
+
+#contentRight {
+    height: 150px;
+}
+
+#contentRight h2 {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+#contentRight p {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+button {
+    width: 150px;
+    padding: 5px;
     border: none;
-    height: 50px;
+    color: white;
     font-weight: bold;
-    font-family: 'Metal Mania', sans-serif;
-    background-color: white;
-    text-shadow: -3px 3px #999;
-    margin: 30px 0;
+    border-radius: 5px;
+    background-color: #bc070d;
 }
 
-@keyframes fadeIn{
+@keyframes slideInLeft {
     from{
         opacity: 0;
     }
