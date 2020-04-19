@@ -2,8 +2,13 @@
 @media screen and (min-width: 900px){
     #footer {
         position: absolute;
-        bottom: 1%;
-        width: 100%;
+        bottom: 0%;
+        width: 99%;
+    }
+
+    #footer #copyright {
+        padding: 5px;
+        border-right: 2px solid #333;
     }
 }
 
@@ -12,16 +17,21 @@
     #footer {
         position: absolute;
         bottom: 0;
+    }
+
+    #footer #copyright {
         width: 100%;
     }
 }
 
 #footer {
     text-align: center;
+    background-color: #eee;
+    padding: 10px;
 }
 
-#footer hr {
-    width: 75%;
+#footer div {
+    display: inline-block;
 }
 
 #footer p {
@@ -34,4 +44,13 @@
     text-decoration: none;
     color: #444;
     font-weight: bold;
+}
+
+#footer #socialLinks #twitter {
+    height: 20px;
+}
+
+#footer #socialLinks>div {
+    vertical-align: middle;
+    margin: 5px;
 }

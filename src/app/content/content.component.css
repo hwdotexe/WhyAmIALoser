@@ -94,11 +94,12 @@
 }
 
 button {
-    width: 150px;
-    padding: 5px;
+    width: 200px;
+    padding: 10px;
     border: none;
     color: white;
     font-weight: bold;
+    font-size: 0.9em;
     border-radius: 5px;
     background-color: #bc070d;
 }
