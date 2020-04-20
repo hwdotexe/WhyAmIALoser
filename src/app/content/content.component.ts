@@ -7,7 +7,10 @@ import { ReasonGenService } from '../services/reason-gen.service';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  displayReason: string;
+  displayReason: {
+    text: string,
+    user: string
+  };
 
   constructor(private reasons: ReasonGenService) {
     this.refreshReason();

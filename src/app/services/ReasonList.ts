@@ -1,7 +1,15 @@
 export class ReasonList {
-    reasons: string[];
+    reasons: [
+        {
+            text: string,
+            user: string
+        }
+    ]
 
     constructor() {
-        this.reasons =  ['Click the button to start'];
+        this.reasons =  [{
+            "text": "Click the button below to begin",
+            "user": ""
+        }];
     }
 }

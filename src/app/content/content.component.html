@@ -4,8 +4,8 @@
             <h2>You are a loser because...</h2>
         </div>
         <div id="contentRight">
-            <h2>{{displayReason}}</h2>
-            <p *ngIf="false">Suggested by User123</p>
+            <h2>{{displayReason.text}}</h2>
+            <p *ngIf="displayReason.user.length>0">Suggested by {{displayReason.user}}</p>
         </div>
         <br/>
         <button (click)="this.refreshReason()">AGAIN</button>

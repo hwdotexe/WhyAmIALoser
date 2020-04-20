@@ -1,6 +1,5 @@
 import { Injectable, ComponentFactoryResolver } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 import { ReasonList } from './ReasonList';
 
 @Injectable({
@@ -15,10 +14,11 @@ export class ReasonGenService {
 
     json$.subscribe(data=> {
       this.rList = data as ReasonList;
+      console.log(data);
     });
   }
 
-  getNewReason(): string {
+  getNewReason(): any {
     var pos = Math.floor(Math.random()*this.rList.reasons.length);
 
     return this.rList.reasons[pos];
