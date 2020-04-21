@@ -7,8 +7,9 @@
             <h2>{{displayReason.text}}</h2>
             <p *ngIf="displayReason.user.length>0">Suggested by {{displayReason.user}}</p>
         </div>
-        <br/>
-        <button (click)="this.refreshReason()">AGAIN</button>
-        <a href="https://forms.gle/dvmi6qNcCq22D16V7" target="_blank">or, submit your own</a>
+        <div id="buttons">
+            <button (click)="this.refreshReason()">{{againBtnTxt}}</button>
+            <a href="https://forms.gle/dvmi6qNcCq22D16V7" target="_blank">or, submit your own</a>
+        </div>
     </div>
 </div>

@@ -107,8 +107,12 @@
     font-style: italic;
 }
 
+#buttons {
+    margin: 15px;
+}
+
 button {
-    width: 200px;
+    min-width: 200px;
     padding: 10px;
     border: none;
     color: white;
@@ -116,13 +120,4 @@ button {
     font-size: 0.9em;
     border-radius: 5px;
     background-color: #bc070d;
-}
-
-@keyframes slideInLeft {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
 }

@@ -6,10 +6,5 @@ export class ReasonList {
         }
     ]
 
-    constructor() {
-        this.reasons =  [{
-            "text": "Click the button below to begin",
-            "user": ""
-        }];
-    }
+    constructor() {}
 }
