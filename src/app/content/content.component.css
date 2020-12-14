@@ -119,5 +119,5 @@ button {
     font-weight: bold;
     font-size: 0.9em;
     border-radius: 5px;
-    background-color: #bc070d;
+    background-color: var(--color-red);
 }

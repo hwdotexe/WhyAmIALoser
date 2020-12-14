@@ -3,5 +3,13 @@
 
 body {
     margin: 0;
-    background-image: url('assets/plus.svg');
+}
+
+a {
+    text-decoration: underline;
+    color: var(--color-text);
+}
+
+a:hover {
+    color: var(--color-link-hover);
 }
