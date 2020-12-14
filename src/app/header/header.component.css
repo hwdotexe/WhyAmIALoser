@@ -36,6 +36,8 @@
     #header #siteTitle {
         display: inline-block;
         margin: 0 auto;
+        text-align: center;
+        width: 80%;
     }
 
     #header #siteTitle * {
@@ -47,6 +49,7 @@
         height: 60px;
         width: 60px;
         margin: 0;
+        padding: 0;
         vertical-align: middle;
         border: none;
         background-color: var(--color-red-hover);
@@ -64,7 +67,6 @@
         display: block;
         padding: 10px;
         font-size: 1em;
-        margin: 5px 0;
         background-color: var(--color-red-hover);
     }
 }
