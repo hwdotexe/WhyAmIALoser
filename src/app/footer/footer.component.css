@@ -19,10 +19,9 @@
 }
 
 /* Really short Mobile */
-@media screen and (max-height: 700px){
+@media screen and (max-height: 575px){
     #footer {
         position: initial;
-        margin-top: 25px;
     }
 }
 

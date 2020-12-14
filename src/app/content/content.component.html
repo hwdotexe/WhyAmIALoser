@@ -1,15 +1,12 @@
 <div id="panel">
-    <div id="content">
-        <div id="contentLeft">
-            <h2>You are a loser because...</h2>
-        </div>
-        <div id="contentRight">
+    <h2 id="loserTitle">You are a loser, because...</h2>
+
+    <div id="loserReason">
+        <div id="loserReasonText">
             <h2>{{displayReason.text}}</h2>
             <p *ngIf="displayReason.user.length>0">Suggested by {{displayReason.user}}</p>
         </div>
-        <div id="buttons">
-            <button (click)="this.refreshReason()">{{againBtnTxt}}</button>
-            <a href="https://forms.gle/dvmi6qNcCq22D16V7" target="_blank">or, submit your own</a>
-        </div>
+
+        <button (click)="this.refreshReason()">{{againBtnTxt}}</button>
     </div>
 </div>

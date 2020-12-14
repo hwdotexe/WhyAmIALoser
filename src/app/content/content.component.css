@@ -1,123 +1,99 @@
 /* Desktop */
 @media screen and (min-width: 900px){
     #panel {
-        max-width: 60%;
-        margin: 40px auto;
+        max-width: 960px;
+        margin: 0 auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 
-    #panel #content {
-        width: 100%;
+    #loserTitle {
+        font-size: 6em;
     }
 
-    #contentLeft {
-        width: 25%;
-    }
-
-    #contentLeft h2 {
-        text-align: right;
-    }
-
-    #contentLeft {
-        border-right: 2px solid #222;
-    }
-
-    #contentRight {
-        width: 65%;
-    }
-
-    #contentLeft, #contentRight {
-        vertical-align: middle;
-    }
-
-    button:hover {
-        background-color: #820509;
-        cursor: pointer;
+    #loserReasonText {
+        max-width: 75%;
+        margin: 0 auto;
+        min-height: 145px;
     }
 }
 
 /* Mobile */
 @media screen and (max-width: 900px){
     #panel {
-        max-width: 90%;
-        margin: 0 auto;
+        margin: 50px 5px;
     }
 
-    #contentLeft h2 {
-        text-align: center;
-        margin: 0;
+    #loserTitle {
+        font-size: 3em;
     }
 
-    button {
-        margin-top: 30px;
+    #loserReasonText {
+        min-height: 200px;
     }
 }
 
-#panel #content {
-    display: inline-block;
-    margin: 0 auto;
+/* Really short */
+@media screen and (max-height: 700px){
+    #panel {
+        position: initial;
+        transform: unset;
+        margin: 15px auto;
+    }
+}
+
+#loserTitle {
+    color: var(--color-red);
+    font-family: 'Staatliches', 'Comic Sans MS', sans-serif;
     text-align: center;
-    background-color: rgba(200,200,200,0.5);;
-    border-radius: 15px;
-    padding: 10px;
+    word-break: break-word;
+    margin: 0;
 }
 
-#content a {
-    display: block;
-    color: #222;
-    font-family: sans-serif;
-    font-size: 0.8em;
-    font-style: italic;
-    width: 200px;
-    margin: 10px auto;
+#loserReason {
+    text-align: center;
+    height: 50%;
 }
 
-#content a:hover {
-    color: #555;
+#loserReason button {
+    margin: 15px;
+    padding: 10px 50px;
+    border: none;
+    background-color: var(--color-red);
+    color: var(--color-text);
+    font-family: 'Staatliches', 'Comic Sans MS', sans-serif;
+    font-size: 1.3em;
+    border-radius: 5px;
 }
 
-#contentLeft, #contentRight {
-    display: inline-block;
-    text-align: left;
-    margin: 0 15px;
+#loserReason button:hover {
+    background-color: var(--color-red-hover);
+    cursor: pointer;
 }
 
-#contentLeft {
-    padding: 10px;
+#loserReasonText {
+    border: 2px dashed var(--color-dark-gray);
+    padding: 5px;
 }
 
-#contentLeft h2 {
-    font-family: 'Staatliches', sans-serif;
-    font-size: 2em;
-    color: #bc070d;
-}
-
-#contentRight {
-    height: 150px;
-}
-
-#contentRight h2 {
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 2em;
+#loserReasonText h2 {
+    font-family: 'Comic Sans MS', 'Staatliches', sans-serif;
     margin-bottom: 0;
 }
 
-#contentRight p {
+#loserReasonText p {
     font-family: sans-serif;
+    margin: 5px auto;
     font-size: 0.8em;
     font-style: italic;
 }
 
-#buttons {
-    margin: 15px;
-}
-
-button {
-    min-width: 200px;
-    padding: 10px;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 0.9em;
+#panel {
+    padding: 5px;
+    background-color: var(--color-gray);
     border-radius: 5px;
-    background-color: var(--color-red);
 }
