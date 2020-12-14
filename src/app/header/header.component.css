@@ -52,12 +52,12 @@
         background-color: var(--color-red-hover);
         font-size: 2em;
         color: var(--color-text);
+        text-align: center;
     }
 
     #header nav {
         display: block;
         text-align: center;
-        animation: 1s;
     }
 
     #header nav ul li {

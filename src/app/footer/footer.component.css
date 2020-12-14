@@ -34,7 +34,21 @@
     text-align: center;
 }
 
+#footer * {
+    display: inline-block;
+}
+
 #footer p {
     max-width: 500px;
     margin: 0 auto;
+}
+
+#footer #socialLinks #twitter {
+    height: 20px;
+}
+
+#footer #socialLinks * {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
 }
