@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-body {
-    margin: 0;
-}
-
-a {
-    text-decoration: underline;
-    color: var(--color-text);
-}
-
-a:hover {
-    color: var(--color-link-hover);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
