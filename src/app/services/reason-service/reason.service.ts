@@ -1,7 +1,7 @@
 import { Injectable, ComponentFactoryResolver } from '@angular/core';
 import { Reason } from '../../models/Reason';
 import { HttpService } from '../http-service/http.service';
-import { take } from 'rxjs/operators';
+import { take } from 'rxjs/operators'
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,8 @@ export class ReasonService {
   }
 
   private getReasonsFromFile(): void {
+    console.log("fetching reasons from file");
+
     this.httpService.GET<Reason[]>('../assets/reasons.json').pipe(
       take(1)
     ).subscribe((reasons: Reason[]) => {

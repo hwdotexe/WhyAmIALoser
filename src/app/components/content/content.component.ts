@@ -14,14 +14,14 @@ export class ContentComponent implements OnInit {
   hasStarted = false;
   buttonLabels = ["AGAIN", "C'mon, I can take it!", "Have at me!", "That all you got?", "Hit me with your best shot!", "Tell me again", "Get another", "Tis but a scratch!"]
 
-  constructor(private reasons: ReasonService) {}
+  constructor(private reasonService: ReasonService) {}
 
   ngOnInit() {
   }
 
   refreshReason(){
     this.hasStarted = true;
-    this.displayReason = this.reasons.getNewReason();
+    this.displayReason = this.reasonService.getNewReason();
 
     // Update button text.
     var pos = Math.floor(Math.random() * this.buttonLabels.length);
