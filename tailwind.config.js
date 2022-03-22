@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       staatliches: ['Staatliches', 'ui-sans-serif'],
-      comicSans: ['"Comic Sans MS"', 'ui-sans-serif']
+      comicSans: ['"Comic Sans MS"', '"Comic Neue"', 'ui-sans-serif']
     },
     extend: {},
   },

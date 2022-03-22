@@ -27,7 +27,8 @@ export class ReasonService {
   getNewReason(): any {
     // If we've cycled through our reason list, let's refresh.
     if(this.reasonList.length === 0 && this.reasonListUsed.length > 0){
-      this.reasonList, this.reasonListUsed = this.reasonListUsed, this.reasonList;
+      this.reasonList = this.reasonListUsed;
+      this.reasonListUsed = [];
     }
 
     // Get a random reason and add it to our list of used reasons.
