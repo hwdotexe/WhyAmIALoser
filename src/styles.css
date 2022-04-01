@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body {
-    margin: 0;
-}
-
-a {
-    text-decoration: underline;
-    color: var(--color-text);
-}
-
-a:hover {
-    color: var(--color-link-hover);
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,14 @@
+<div class="mx-auto lg:w-4/5 2xl:w-3/5 lg:my-8 text-center bg-gray-100 shadow-md p-4 rounded-md">
+    <p class="font-comicSans text-3xl p-2 lg:text-5xl">You are a loser because...</p>
+
+    <div class="my-5">
+        <div class="p-4 my-4 shadow-sm min-h-[200px] bg-gray-50 rounded-md flex">
+            <div class="m-auto">
+                <p class="text-xl font-comicSans">{{displayReason?.text || "Click the button to start"}}</p>
+                <p *ngIf="displayReason?.user.length>0" class="text-sm italic">Suggested by {{displayReason.user}}</p>
+            </div>
+        </div>
+
+        <button class="bg-red-700 hover:bg-red-900 px-4 py-1 rounded-md shadow-md text-white font-semibold text-lg" (click)="this.refreshReason()">{{againBtnTxt}}</button>
+    </div>
+</div>
