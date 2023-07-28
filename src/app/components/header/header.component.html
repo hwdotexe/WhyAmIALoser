@@ -1,15 +1,52 @@
 <div class="bg-red-800 p-2 lg:p-4 flex font-staatliches">
-  <div class="inline-block align-middle flex-initial">
+  <a [routerLink]="['']" class="inline-block self-center align-middle flex-initial">
     <img src="../../../assets/img/loser.png" class="max-w-[5rem] inline-block" />
     <h2 class="inline-block align-middle mx-2 lg:mx-4 text-white text-xl lg:text-2xl">Why am I a Loser?</h2>
-  </div>
+  </a>
 
   <div class="flex-1"></div>
 
+  <div class="flex-initial self-center px-3 hover:cursor-pointer" (click)="toggleNav()">
+    <i class="fa-solid fa-bars text-white text-3xl"></i>
+  </div>
+</div>
+<div *ngIf="navOpen" class="bg-red-950 border-l border-white absolute right-0 top-0 h-full w-64 sm:w-96 p-5 text-white animate-flyIn">
+  <div class="flex mb-3">
+    <div class="self-center p-1 pl-3 hover:cursor-pointer" (click)="toggleNav()">
+      <i class="fa-solid fa-xmark text-3xl"></i>
+    </div>
+    <div class="flex-1"></div>
+    <p class="self-center text-3xl font-staatliches">Loser Menu</p>
+    <div class="flex-1"></div>
+  </div>
+
   <a
-    class="inline-block align-middle flex-initial text-white text-lg lg:text-xl underline self-center"
+    class="flex font-staatliches p-3 my-1 bg-red-900 rounded-sm shadow-sm hover:bg-red-800 hover:cursor-pointer"
     href="https://forms.gle/7Grxvwu7712DVGeu8"
     target="_blank">
-    Suggest Your Own
+    <i class="fa-regular fa-comment text-3xl mr-3"></i>
+    <p class="text-2xl">Suggest a Reason</p>
   </a>
+
+  <a
+    [routerLink]="['about']"
+    class="flex font-staatliches p-3 my-1 bg-red-900 rounded-sm shadow-sm hover:bg-red-800 hover:cursor-pointer"
+    (click)="toggleNav()">
+    <i class="fa-regular fa-circle-question text-3xl mr-3"></i>
+    <p class="text-2xl">Site Info</p>
+  </a>
+
+  <a
+    class="flex font-staatliches p-3 my-1 bg-red-900 rounded-sm shadow-sm hover:bg-red-800 hover:cursor-pointer"
+    href="https://forms.gle/RYxTw5YxhRipNq8B9"
+    target="_blank">
+    <i class="fa-regular fa-flag text-3xl mr-3"></i>
+    <p class="text-2xl">Report a Concern</p>
+  </a>
+
+  <div class="flex my-3 justify-center">
+    <a href="https://ko-fi.com/J3J8ET4OE" target="_blank">
+      <img height="36" class="border-0 h-9" src="https://storage.ko-fi.com/cdn/kofi1.png?v=3" alt="Buy Me a Coffee at ko-fi.com" />
+    </a>
+  </div>
 </div>
